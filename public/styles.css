@@ -26,6 +26,15 @@ img {
   max-width: 100%;
 }
 
+.hide-element {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .app-container {
   height: 100vh;
   display: flex;
@@ -41,7 +50,12 @@ img {
 }
 
 .app-container--footer {
+  box-sizing: border-box;
+  width: 100vw;
   padding: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .card {
